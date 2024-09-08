@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Button } from "@repo/ui/button";
+import { dateFormat } from "@utils/dateFormat";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <p>{dateFormat.date1(String(new Date()))}</p>
         {children}
       </body>
       <Button appName="test">test</Button>
