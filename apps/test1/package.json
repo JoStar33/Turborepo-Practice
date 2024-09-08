@@ -8,11 +8,6 @@
 		"build": "tsc -b && vite build",
 		"preview": "vite preview"
 	},
-	"peerDependencies": {
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"react-router-dom": "^6.25.1"
-	},
 	"dependencies": {
     "@repo/ui": "workspace:*",
 		"@vitejs/plugin-react": "^4.3.1",
