@@ -1,5 +1,5 @@
-import { validation } from "./validation";
-import * as yup from "yup";
+import { validation } from './validation.js';
+import * as yup from 'yup';
 
 /** PDF 제목변경 */
 const pdfTitleSchema = yup.object({

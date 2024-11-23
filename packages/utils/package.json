@@ -1,0 +1,45 @@
+{
+  "name": "@repo/utils",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./changeFileToBase64": {
+      "types": "./src/changeFileToBase64.ts",
+      "default": "./dist/changeFileToBase64.js"
+    },
+    "./loadFileFromBase64": {
+      "types": "./src/loadFileFromBase64.ts",
+      "default": "./dist/loadFileFromBase64.js"
+    },
+    "./dateFormat": {
+      "types": "./src/dateFormat.ts",
+      "default": "./dist/dateFormat.js"
+    },
+    "./debounce": {
+      "types": "./src/debounce.ts",
+      "default": "./dist/debounce.js"
+    },
+    "./validate/regex": {
+      "types": "./src/validate/regex.ts",
+      "default": "./dist/validate/regex.js"
+    },
+    "./validate/schema": {
+      "types": "./src/validate/schema.ts",
+      "default": "./dist/validate/schema.js"
+    },
+    "./validate/validation": {
+      "types": "./src/validate/validation.ts",
+      "default": "./dist/validate/validation.js"
+    }
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "yup": "^1.4.0"
+  }
+}

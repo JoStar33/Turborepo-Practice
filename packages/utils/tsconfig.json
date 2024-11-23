@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "lib": ["es2022", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "sourceMap": true,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
